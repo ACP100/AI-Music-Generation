@@ -1,0 +1,26 @@
+the duration of the midi files are given in the ,.json file as such:
+ {
+        "artist": "The Dave Clark Five",
+        "song": "Catch Us If You Can",
+        "url": "https://youtube.com/watch?v=5kdpSMlOn2A",
+        "title": "Glad All Over Dave Clark Five COLOR Widescreen HiQ Hybrid JARichardsFilm 720p - YouTube"
+	"midi_duration" : "HH:MM:SS"
+    },
+ {
+        "artist": "kishor",
+        "song": "dai namasskassr",
+        "url": "https://youtube.com/watch?v=ICHn6dg",
+        "title": "namaskayye"
+	"midi_duration" : "HH:MM:SS"
+    }
+
+following is what the python ode needs to do:
+-check the duration of the songs using the youtube link
+-if the duration of the song and the duration of the midi file is different (1-2 seconds in tolerable)do the following:
+	1) search on you tube the artist and song in following format:(for above example (first one))
+		The Dave Clark Five - Catch Us If You Can
+	2) check through numerous videos and choose the video with appropriate time duration i.e. having duration equivalent to midi_duration with max 1-2 seconds deviation
+	3) update the url in the .json with url of the video from step 2).
+
+
+	
